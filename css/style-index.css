@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+
+}
+
+.login{
+    width: 100px;
+    display: grid;
+    grid-template-columns: 57vw 40vw;
+    align-items: center;
+}
+
+form{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+input{
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    width: 300px;
+}
+
+
+
+.circulo{
+    margin-top: 10vh;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 50%;
+    background-color:aqua;
+    margin-left: -45%;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.404);}
+
+.img-inicio{
+    margin-top: -80vh;
+    height: 80vh;
+}
+
+.img-bloco-plano{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: aqua;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.404);
+    z-index: 999;
+
+}
+
+i{
+    display: grid;
+    margin: 0 auto;
+}
+
+.planos-blocos{
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    width: 17vw;
+    margin-top: 5vh;
+}
+
+.planos-blocos:hover{
+    -xpedu-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        transform: scale(1.07);
+        cursor: pointer;
+}
+
+.blocos-textos{
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    height: 60vh;
+    
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.404);
+    margin-top: -5vh;
+    
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10vh;
+}
+
+h3{
+    text-align: center;
+
+}
+
+ul{
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.planos-viagens{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.blocos-botao button {
+    background-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;   
+    width: 100%;
+    height: 40px;
+    border: none;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.404);
+}
+
+
+.blocos-botao button:hover{
+    background-color: white;
+    border: 3px solid aqua;
+    color: aqua;
+    cursor: pointer;
+    transform: 1.2s;
+}
+
+.indicacoes{
+    background-color: aqua;
+    width: 98.6vw;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
+    border-radius: 50px;
+    height: 800px;
+    display: flex;
+    justify-content: center;  
+
+}
+
+.h3-indica{
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    border: 3px solid black;
+    border-left: none;
+    
+    margin-bottom: -2vh;
+    height: 80px;
+    font-size: 30px;
+    color: black;
+    width: 700px;
+    padding: 10px;
+    margin-bottom: -5vh;
+    position:sticky;
+}
+
+a{
+    text-decoration: none;
+}
+
+.input-slide{
+    display: none;
+}
+
+.slide-meu {
+
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.cards {
+    
+    position: relative;
+    height: 200px;
+    width: 430px;
+    margin-bottom: 20px;
+    perspective: 350px;
+    transform-style: preserve-3d;
+    margin-top: 20vh;
+}
+
+.cards label {
+
+    position: absolute;
+    width: 430px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+}
+
+.cards .card{
+    display: grid;
+    align-items: center;
+    position: relative;
+    height: 650px;
+    background-color: white;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);
+    padding: 30px 35px;
+    margin-top: -7vh;
+}
+
+.card .imagem-card{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .image img{
+
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+    margin-top: 5vh;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    
+}
+
+.card .image .dots{
+
+    text-align: center;
+}
+
+.dots div{
+
+    
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card .infos{
+
+    display: block;
+    text-align: end;
+}
+
+.infos span{
+
+    display: block;
+}
+
+.infos .name{
+
+    font-size: 24px;
+    color: black;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    padding-left: 25%;
+    transition: all .6s ease;
+}
+
+.infos .lorem{
+
+    font-size: 15.5px;
+    color: rgb(63, 63, 63);
+    letter-spacing: 3px;
+}
+
+.card .btn-contact{
+
+    width: 100%;
+    height: 60px;
+    margin-bottom: 3vh;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 2px 2px  2px 0px rgba(0, 0, 0, 0.253);
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    transition: all .7s ease;
+}
+
+.btn-contact:hover{
+    background-color: #fff;
+    color: aqua;
+    border: 3px solid aqua;
+}
+
+
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-70%, 0, -220px);
+    
+}
+
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-35%, 0, -120px);
+    
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5 {
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+    transform: translate3d(0, 0, 0);
+    
+}
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(35%, 0, -120px);
+    
+}
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(70%, 0, -220px);
+    
+}
+
+.merchan{
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    gap: 40px;
+    margin-top: 5vh;
+    max-width: 100%;
+    
+}
+
+.merchan div:nth-child(odd){
+    display: grid;
+    grid-template-columns: 54vw 43vw;
+    
+    align-items: center ;
+    justify-items: center;
+    height: 300px;
+    
+   
+}
+
+.merchan div:nth-child(even){
+    display: grid;
+    grid-template-columns: 43vw 54vw;
+    
+    align-items: center ;
+    justify-items: center;
+    height: 300px;
+    
+   
+}
+
+.merchan div img{
+    width: 30vw;
+    height: 40vh;
+    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.526);
+}
+
+.h3-merchan{
+    font-size: 4em;
+    width: 100%;
+}
+
+.parte2{
+    height: 200px;
+}

@@ -406,3 +406,32 @@ a{
 .parte2{
     height: 200px;
 }
+
+.pacotes-promocionais{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.itens-promocao{
+    width: 38vw;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.itens-promocao img{
+    height: 100%;
+    width: 100%;
+}
+
+.itens-promocao div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    align-items: center;
+    margin-left: 1vw;
+}

@@ -148,7 +148,7 @@ ul{
 
 .indicacoes{
     background-color: aqua;
-    width: 98.6vw;
+    width: 98.9vw;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
     border-radius: 50px;
     height: 800px;
@@ -163,14 +163,14 @@ ul{
     border: 3px solid black;
     border-left: none;
     
-    margin-bottom: -2vh;
+    margin-bottom: -11vh;
     height: 80px;
     font-size: 30px;
     color: black;
     width: 700px;
     padding: 10px;
     margin-bottom: -5vh;
-    position:sticky;
+    position: sticky;
 }
 
 a{
@@ -409,7 +409,7 @@ a{
 
 .pacotes-promocionais{
     padding: 10vh;
-    width: 100vw;
+    width: 98.9vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -417,6 +417,7 @@ a{
     margin-top: 5vh;
     background-color: whitesmoke;
     border-radius: 50px;
+
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
 }
 
@@ -465,7 +466,7 @@ a{
 }
 
 .h3-promocao{
-    margin-bottom: -10vh;
+    margin-bottom: -12vh;
     background-color: aqua;
     border-radius: 20px 0px 0px 20px;
     display: grid;
@@ -478,8 +479,25 @@ a{
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);
 }
 
+.h3-pp{
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    border: 3px solid black;
+    border-left: none;
+    
+    margin-bottom: -2vh;
+    height: 80px;
+    font-size: 30px;
+    color: black;
+    width: 700px;
+    padding: 10px;
+    margin-bottom: -5vh;
+    position:sticky;
+    
+}
+
 .proxima-parada{
-    height: 800px;
+    height: 500px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     background-color: aqua;
@@ -487,15 +505,26 @@ a{
     justify-content: center;
     gap: 10px;
     padding: 10px;
+    width: 98.9vw;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
+    border-radius: 50px;
 }
 
 .continentes{
     border-radius: 20px;
-    height: 400px;
+    height: 350px;
+    width: 240px;
     background-color: white;
     display: grid;
     justify-content: center;
     text-align: center;
+    margin-left: 9px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);
+}
+
+.continentes:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .continentes p {
@@ -511,28 +540,116 @@ a{
 .continentes .americas:hover{
     transform: scale(1.1);
     color: green;
+    transition: 0.5s;
 }
 
 
 .continentes .europe:hover{
     transform: scale(1.1);
     color: blue;
+    transition: 0.5s;
 }
 
 
 .continentes .africa:hover{
     transform: scale(1.1);
     color: orangered;
+    transition: 0.5s;
 }
 
 
 .continentes .asia:hover{
     transform: scale(1.1);
     color: yellow;
+    transition: 0.5s;
 }
 
 
 .continentes .oceania:hover{
     transform: scale(1.1);
     color: red;
+    transition: 0.5s;
+}
+
+.curiosidades{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 40% 59%;
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 98.9vw;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
+    border-radius: 50px;
+}
+
+.card-recomendados:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.curiosidades .texto{
+    margin-top: 10vh;
+}
+
+.curiosidades .texto h2{
+    font-size: 1.27em;
+}
+
+.curiosidades .texto h2, .curiosidades .texto i{
+    text-align: left;
+    margin: 30px;
+    margin-bottom: -20px;
+    font-weight: 600;
+}
+
+.lugares-recomendados{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.card-recomendados{
+    display: grid;
+    justify-items: center;
+    gap: 10px   ;
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);   
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.lugares-recomendados img{
+    width: 220px;
+    border-radius: 20px;
+    height: 150px;
+}
+
+.h3-dicas{
+    margin-bottom: -5vh;
+    background-color: aqua;
+    border-radius: 20px 0px 0px 20px;
+    display: grid;
+    align-items: center;
+    height: 80px;
+    font-size: 30px;
+    color: whitesmoke;
+    width: 700px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);
+}
+
+footer{
+    height: 400px;
+    display: grid;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 98.9vw;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 30vh;
 }

@@ -5,10 +5,6 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.container{
-
-}
-
 .login{
     width: 100px;
     display: grid;
@@ -580,6 +576,7 @@ a{
     width: 98.9vw;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
     border-radius: 50px;
+
 }
 
 .card-recomendados:hover{
@@ -607,6 +604,7 @@ a{
     align-items: center;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
+    height: 100%;
 }
 
 .card-recomendados{
@@ -619,6 +617,7 @@ a{
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);   
     padding: 10px;
     border-radius: 20px;
+    margin-top: 15%;
 }
 
 .lugares-recomendados img{
@@ -639,17 +638,36 @@ a{
     width: 700px;
     padding: 10px;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);
+    position: sticky;
 }
 
-footer{
-    height: 400px;
+.footer{
+    height: 300px;
     display: grid;
     background-color: aqua;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     width: 98.9vw;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
     border-radius: 50px 50px 0px 0px;
     margin-top: 30vh;
+    margin-left: -10px;
 }
+
+@keyframes Color {
+    0% {
+        color: rgb(214, 253, 253);
+      
+    }
+    50% {
+      color: rgb(150, 255, 255);
+    }
+    100% {
+        color: aqua;
+    }
+  }
+
+.floco{
+    animation: Color 4s infinite;
+}
+

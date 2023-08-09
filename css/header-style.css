@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    
+    padding: 0;
+    margin: 0;
 }
 
 header{
@@ -12,26 +13,32 @@ header{
     background-size: cover;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-    
+    display: grid;
+    grid-template-rows: 4fr 6fr;
+
+    padding: 20px;
 }
 
 .header-inicial{
     display: grid;
     justify-content: left;
-    height: 100%;
-    align-items: end;
+    height: 100%
+    
 }
 
 .ul-inicial{
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    gap: 10PX;
     list-style: none;
     text-align: center;
+    align-items: end;
+    height: 68vh;
+   
 }
 
 .ul-inicial li{
     padding: 20px;
-    margin: -20px 10px;
     background-color: white;
     border-radius: 10px 10px 0px 0px;
     cursor: pointer;
@@ -51,3 +58,34 @@ header{
     transform: scale(1.1);
     transition: 0.5s;
 }
+
+.form-style{
+    width: 35vw;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+    margin-left: 20px;
+}
+
+.form-style div input{
+    width: 160px;
+    height: 29px;
+}
+
+button{
+    color: aqua;
+    background-color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+header .login{
+    color: whitesmoke;
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: pointer;
+}
+

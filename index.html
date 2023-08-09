@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/style-index.css">
   <link rel="stylesheet" href="css/header-style.css">
-
+  
 </head>
 
 <body>
@@ -21,7 +21,22 @@
 
     <div class="header-inicial">
       <div class="login">
-        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        <p> <i class="fa-solid fa-right-to-bracket" style="color: aqua;"></i> Login / <i class="fa-solid fa-user-plus"
+            style="color: aqua;"> </i> Cadastro</p>
+        <!-- <form action="" class="form-style">
+          <div>
+            <label for="login">Login:</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div style="margin-left: -1.6vw;">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+
+          </div>
+          <div>
+            <button>Cadastra-se </button>
+          </div>
+        </form> -->
       </div>
       <ul class="ul-inicial">
         <li id="abaHome" onclick="abaHome()"><a href="">Home <i class="fa-solid fa-house" style="color: aqua;"></i></a>
@@ -29,35 +44,15 @@
         <li id="abaAviao" onclick="abaAviao()"><a href="">Avião <i class="fa-solid fa-plane"
               style="color: aqua;"></i></a>
         </li>
-        <li id="abaCruzeiro" onclick="abaCruzeiro()"><a href="" >Cruzeiro <i class="fa-solid fa-sailboat"
+        <li id="abaCruzeiro" onclick="abaCruzeiro()"><a href="">Cruzeiro <i class="fa-solid fa-sailboat"
               style="color: aqua;"></i></a></li>
-        <li id="abaInter" onclick="abaInter()"><a href="" >Internacionais <i class="fa-solid fa-earth-americas"
+        <li id="abaInter" onclick="abaInter()"><a href="">Internacionais <i class="fa-solid fa-earth-americas"
               style="color: aqua;"></i></a></li>
-        <li id="abaSup" onclick="abaSup()"><a href="" >Suporte <i class="fa-solid fa-headset"
+        <li id="abaSup" onclick="abaSup()"><a href="">Suporte <i class="fa-solid fa-headset"
               style="color: aqua;"></i></a></li>
       </ul>
     </div>
   </header>
-  <!-- <div class="container">
-    <div class="login">
-      <div>
-        <div class="circulo"></div>
-        <img class="img-inicio" src="img/familia.png" alt="">
-      </div>
-      <div>
-        <h2>LOGIN</h2>
-        <form action="">
-          <div>
-            <label for="login">Login:</label><br>
-            <input type="text" name="login" id="login">
-          </div>
-          <div>
-            <label for="senha">Senha:</label><br>
-            <input type="password" name="senha" id="senha">
-          </div>
-        </form>
-      </div>
-    </div> -->
 
   <hr style="width: 80vw; margin: 0 auto; margin-top: 8vh;">
 
@@ -436,150 +431,37 @@
 
 
       </div>
-      <div class="footer">
 
+    </div>
+    <footer>
+      <div>
+        <ul>
+          <li>Contatos</li>
+          <li><a href="">(19) 99999-9999</a></li>
+          <li><a href="">acviagens@gmail.com</a></li>
+          <li><a href="">@AcViagens</a></li>
+        </ul>
       </div>
-    </div>
-    <div id="abaAviao-layout">
-      
-    </div>
-    
-    <script>
+      <div>
+        <ul>
+          <li>Duvidas Frequentes</li>
+          <li><a href="">Pagamentos</a></li>
+          <li><a href="">Entregas</a></li>
+          <li><a href="">Planos</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="redes-sociais">
+          <li><a href="" class="redes-sociais-a"><i class="fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="" class="redes-sociais-a"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="" class="redes-sociais-a"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script src="js/home.js"> </script>
 
-      const abaHome = () => {
-
-        $('#abaAviao-layout').hide()
-
-        $('#abaInter-layout').hide()
-
-        $('#abaCruzeiro-layout').hide()
-
-        $('#abaSup-layout').hide()
-
-        $('#abaHome-layout').show()
-
-
-        $('#abaHome').addClass('tab-ativo')
-        
-        $('#abaAviao').removeClass('tab-ativo')
-
-        $('#abaInter').removeClass('tab-ativo')
-
-        $('#abaSup').removeClass('tab-ativo')
-
-        $('#abaCruzeiro').removeClass('tab-ativo')
-
-        
-      }
-
-      const abaAviao = () => {
-
-        $('#abaHome-layout').hide()
-
-        $('#abaInter-layout').hide()
-
-        $('#abaCruzeiro-layout').hide()
-
-        $('#abaSup-layout').hide()
-
-        $('#abaAviao-layout').show()
-
-
-        $('#abaAviao').addClass('tab-ativo')
-
-        $('#abaHome').removeClass('tab-ativo')
-
-        $('#abaCruzeiro').removeClass('tab-ativo')
-
-        $('#abaSup').removeClass('tab-ativo')
-
-        $('#abaInter').removeClass('tab-ativo')
-
-        
-      }
-
-      const abaCruzeiro = () => {
-
-        $('#abaHome-layout').hide()
-
-        $('#abaInter-layout').hide()
-
-        $('#abaAviao-layout').hide()
-
-        $('#abaSup-layout').hide()
-
-        $('#abaCruzeiro-layout').show()
-
-
-        $('#abaCruzeiro').addClass('tab-ativo')
-
-        $('#abaHome').removeClass('tab-ativo')
-
-        $('#abaAviao').removeClass('tab-ativo')
-
-        $('#abaSup').removeClass('tab-ativo')
-
-        $('#abaInter').removeClass('tab-ativo')
-
-        
-      }
-
-      const abaInter = () => {
-
-        $('#abaHome-layout').hide()
-
-        $('#abaAviao-layout').hide()
-
-        $('#abaCruzeiro-layout').hide()
-
-        $('#abaSup-layout').hide()
-
-        $('#abaInter-layout').show()
-
-
-
-        $('#abaInter').addClass('tab-ativo')
-                
-        $('#abaHome').removeClass('tab-ativo')
-
-        $('#abaAviao').removeClass('tab-ativo')
-
-        $('#abaSup').removeClass('tab-ativo')
-
-        $('#abaCruzeiro').removeClass('tab-ativo')
-
-        
-      }
-
-      const abaSup = () => {
-
-        $('#abaHome-layout').hide()
-
-        $('#abaInter-layout').hide()
-
-        $('#abaCruzeiro-layout').hide()
-
-        $('#abaAviao-layout').hide()
-
-        $('#abaSup-layout').show()
-
-
-        $('#abaSup').addClass('tab-ativo')
-
-        $('#abaHome').removeClass('tab-ativo')
-
-        $('#abaAviao').removeClass('tab-ativo')
-
-        $('#abaInter').removeClass('tab-ativo')
-
-        $('#abaCruzeiro').removeClass('tab-ativo')
-
-        
-      }
-
-
-
-    </script>
     <script src="https://kit.fontawesome.com/58751a54d8.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>

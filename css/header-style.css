@@ -29,11 +29,11 @@ header{
 .ul-inicial{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 10PX;
+    gap: 15PX;
     list-style: none;
     text-align: center;
     align-items: end;
-    height: 68vh;
+    height: 63.7vh;
    
 }
 
@@ -54,10 +54,8 @@ header{
     font-weight: bold;
 }
 
-.tab-ativo{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
+
+    
 
 .form-style{
     width: 35vw;
@@ -89,3 +87,6 @@ header .login{
     cursor: pointer;
 }
 
+.corpo-modal{
+    height: 80vh;
+}

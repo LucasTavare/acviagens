@@ -9,29 +9,9 @@ body{
     overflow-x: hidden;
 }
 
-.login{
-    width: 100px;
-    display: grid;
-    grid-template-columns: 57vw 40vw;
-    align-items: center;
-}
-
-form{
-    display: grid;
-    justify-content: center;
-    gap: 20px;
-}
 
 h2{
     text-align: center;
-}
-
-input{
-    padding: 8px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgb(241, 241, 241);
-    width: 300px;
 }
 
 
@@ -680,3 +660,105 @@ a{
 
 /* modal */
 
+.modal-header{
+    border: none;
+}
+
+.corpo-modal{
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    
+    justify-content: center;
+    padding: 10px;
+    height: 80vh;
+}
+
+.foto-login{
+    background-image: url('/img/fundo-modal.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.479);
+    border-radius: 5px;
+}
+
+form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form div{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    width: 80px;
+    text-align: center;
+    padding-right: 40px;
+}
+
+input{
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    width: 300px;
+
+    box-shadow: 2px 1px 1px 0px rgba(0, 0, 0, 0.603);
+}
+
+.centralizar{
+    display: grid;
+    align-items: start;
+    justify-content: center;
+}
+
+.btn-logar{
+    width: 180px;
+}
+
+.btn-logar:hover{
+    border: none;
+    color: whitesmoke;
+    background-color: aqua;
+    transition: 1s;
+}
+
+.centralizar a{
+    text-decoration: none;
+    color:lightslategray;
+}
+
+/* cadastro */
+
+.corpo-modal-cadastro{
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    
+    justify-content: center;
+    padding: 10px;
+    height: 80vh;
+}
+
+.foto-cadastro{
+    background-image: url('/img/aviao-voando.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.479);
+    border-radius: 5px;
+}
+
+.cadastro{
+    display: grid;
+    align-items: start;
+}

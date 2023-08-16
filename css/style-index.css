@@ -94,7 +94,7 @@ ul{
     display: grid;
     margin: 0 auto;
     align-items: center;
-    padding: 20px;
+    
 }
 
 .planos-viagens{
@@ -128,7 +128,7 @@ ul{
 
 .indicacoes{
     background-color: aqua;
-    width: 98.9vw;
+    width: 100vw;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
     border-radius: 50px;
     height: 800px;
@@ -389,7 +389,7 @@ a{
 
 .pacotes-promocionais{
     padding: 10vh;
-    width: 98.9vw;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -486,7 +486,7 @@ a{
     justify-content: center;
     gap: 10px;
     padding: 10px;
-    width: 98.9vw;
+    width: 100vw;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
     border-radius: 50px;
 }
@@ -556,10 +556,10 @@ a{
 .curiosidades{
     height: 500px;
     display: grid;
-    grid-template-columns: 40% 59%;
+    grid-template-columns: 45% 55%;
     background-color: whitesmoke;
     padding: 10px;
-    width: 98.9vw;
+    width: 100vw;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
     border-radius: 50px;
 
@@ -589,22 +589,23 @@ a{
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
     height: 100%;
     margin-top: 10px;
 }
 
 .card-recomendados{
     display: grid;
-    justify-items: center;
+    align-items: end;
+    justify-content: center;
     gap: 10px   ;
-    width: 250px;
+    width: 260px;
     height: 400px;
     background-color: white;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);   
     padding: 10px;
     border-radius: 20px;
     margin-top: 15%;
+    
 }
 
 .lugares-recomendados img{
@@ -655,7 +656,7 @@ a{
   }
 
 .floco{
-    animation: Color 4s infinite;
+    animation: Color 2s infinite;
 }
 
 /* modal */
@@ -697,8 +698,8 @@ form div{
     align-items: center;
 }
 
-label{
-    width: 80px;
+.label-modal{
+    width: 90px;
     text-align: center;
     padding-right: 40px;
 }

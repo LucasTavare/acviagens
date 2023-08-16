@@ -11,39 +11,33 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-    display: grid;
-    grid-template-rows: 4fr 6fr;
-
-    padding: 20px;
-    
 }
 
-.header-inicial{
-    display: grid;
-    justify-content: left;
-    height: 100%
-    
+.header-inicial {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .ul-inicial{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 15PX;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
     list-style: none;
-    text-align: center;
-    align-items: end;
-    height: 63.7vh;
-   
 }
 
 .ul-inicial li{
-    padding: 20px;
+    width: 160px;
+    height: 60px;
     background-color: white;
     border-radius: 10px 10px 0px 0px;
     cursor: pointer;
 }
+
 .ul-inicial li:hover{
     transform: scale(1.1);
     transition: 0.5s;
@@ -54,8 +48,6 @@ header{
     color: aqua;
     font-weight: bold;
 }
-
-
     
 
 .form-style{
@@ -86,8 +78,11 @@ header .login{
     font-weight: bold;
     padding-left: 10px;
     cursor: pointer;
+    display: grid;
+    align-items: start;
 }
 
 .corpo-modal{
     height: 80vh;
 }
+

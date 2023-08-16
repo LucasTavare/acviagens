@@ -675,7 +675,7 @@ a{
 }
 
 .foto-login{
-    background-image: url('/img/fundo-modal.jpg');
+    background-image: url('../img/fundo-modal.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -748,7 +748,7 @@ input{
 }
 
 .foto-cadastro{
-    background-image: url('/img/aviao-voando.jpg');
+    background-image: url('../img/aviao-voando.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

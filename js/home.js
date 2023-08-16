@@ -1,86 +1,32 @@
-// const abaHome = () => {
-
-
-
-//         $('#abaHome').addClass('tab-ativo')
+const cadastrarUser = () => {
+    let dados = new FormData($('#cadastrarUser')[0])
+    const result = fetch('backend/cadastrar_usuario.php', {
+        method: 'POST',
+        body: dados
+      })
+      .then((response => response.json()))
+    .then((result) => {
+      if(result.retorno == 'erro'){
+        Swal.fire({
+        icon: result.retorno == 'erro' ? 'error' : 'success',
+        title: 'Atenção',
+        text: result.mensagem,
+        showConfiirmButton: false
+      })
+      }else{
+        Swal.fire({
+          title: 'Sucesso!',
+          text: result.mensagem,
+          icon: 'success',
+          confirmButtonColor: '#078BB7',
+          confirmButtonText: 'OK!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.replace("http://localhost/acviagens/index.php")
+          }
+        })
+    
         
-//         $('#abaAviao').removeClass('tab-ativo')
-
-//         $('#abaInter').removeClass('tab-ativo')
-
-//         $('#abaSup').removeClass('tab-ativo')
-
-//         $('#abaCruzeiro').removeClass('tab-ativo')
-
-        
-//       }
-
-//       const abaAviao = () => {
-
-
-//         $('#abaAviao').addClass('tab-ativo')
-
-//         $('#abaHome').removeClass('tab-ativo')
-
-//         $('#abaCruzeiro').removeClass('tab-ativo')
-
-//         $('#abaSup').removeClass('tab-ativo')
-
-//         $('#abaInter').removeClass('tab-ativo')
-
-        
-//       }
-
-//       const abaCruzeiro = () => {
-
-
-
-
-//         $('#abaCruzeiro').addClass('tab-ativo')
-
-//         $('#abaHome').removeClass('tab-ativo')
-
-//         $('#abaAviao').removeClass('tab-ativo')
-
-//         $('#abaSup').removeClass('tab-ativo')
-
-//         $('#abaInter').removeClass('tab-ativo')
-
-        
-//       }
-
-//       const abaInter = () => {
-
-
-
-
-
-//         $('#abaInter').addClass('tab-ativo')
-                
-//         $('#abaHome').removeClass('tab-ativo')
-
-//         $('#abaAviao').removeClass('tab-ativo')
-
-//         $('#abaSup').removeClass('tab-ativo')
-
-//         $('#abaCruzeiro').removeClass('tab-ativo')
-
-        
-//       }
-
-//       const abaSup = () => {
-
-
-
-//         $('#abaSup').addClass('tab-ativo')
-
-//         $('#abaHome').removeClass('tab-ativo')
-
-//         $('#abaAviao').removeClass('tab-ativo')
-
-//         $('#abaInter').removeClass('tab-ativo')
-
-//         $('#abaCruzeiro').removeClass('tab-ativo')
-
-        
-//       }
+      }
+    })
+}

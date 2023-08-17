@@ -30,3 +30,29 @@ const cadastrarUser = () => {
       }
     })
 }
+
+const acionaModal = () =>{
+
+  const elementoPromocao = $(this).closest('.itens-promocao');
+
+  const elementoModal = $('.modal-promocao .corpo-modal-promocao');
+  
+  const dados = [];
+
+  dados['valor'] = elementoPromocao.find('c').text();
+
+  dados['locais'] = elementoPromocao.find('p').text();
+
+  elementoModal.html(`
+  
+    <p>${dados['locais']}</p>
+
+    <small>${dados['valor']}</small>
+
+  `);
+
+  console.log(dados)
+  
+
+}
+

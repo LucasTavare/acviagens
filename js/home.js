@@ -33,26 +33,34 @@ const cadastrarUser = () => {
 
 const acionaModal = () =>{
 
+  const p = document.getElementById('textoP')
+
   const elementoPromocao = $(this).closest('.itens-promocao');
 
   const elementoModal = $('.modal-promocao .corpo-modal-promocao');
   
-  const dados = [];
-
-  dados['valor'] = elementoPromocao.find('c').text();
-
-  dados['locais'] = elementoPromocao.find('p').text();
 
   elementoModal.html(`
   
-    <p>${dados['locais']}</p>
-
-    <small>${dados['valor']}</small>
-
   `);
 
   console.log(dados)
   
+  console.log(p)
 
 }
+
+
+// internacional scrpit
+
+var swiper = new Swiper(".swiper", {
+  grabCursor: true, 
+  speed: 500, 
+  effect: "slide",
+  Loop: true,
+  mousewheel: {
+  invert: false, sensitivity: 1,
+  },
+});
+  swiper.enable();
 

@@ -180,17 +180,16 @@ include'header.php'
 
     <div class="pacotes-promocionais">
 
-      <div class="itens-promocao">
+    <div class="itens-promocao">
         <img src="img/lisboa.jpg" alt="">
         <div>
           <p style="line-height: 10  pt; font-size: 0.96em;">Passagem aerea:<br><i class="fa-solid fa-plane"></i> -
             lisboa <br> Saindo de: <br> São Paulo (SP) </p>
           <p>
-            <c style="border-bottom: 1px solid black; display: flex;">R$ 249<sup>,90</c></sup>Ida e Volta
+            <c style="border-bottom: 1px solid black; display: flex;">R$ 249<sob>,90</c></obp>Ida e Volta
           </p>
-          <button class="btn-promocao" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao" onclick="acionaModal()">Comprar</button>
+          <button class="btn-promocao" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao"onclick="acionaModal()">Comprar</button>
         </div>
-
       </div>
       <div class="itens-promocao">
         <img src="img/londres.jpg" alt="">
@@ -275,7 +274,7 @@ include'header.php'
       </div>
     </div>
 
-    <hr style=" width: 80vw; margin: 5vh auto;">
+    <hr style=" width: 90vw; margin: 5vh auto;">
     <div style="display: grid; justify-content: end;">
       <h3 class="h3-dicas">Viagens de inverno</h3>
     </div>

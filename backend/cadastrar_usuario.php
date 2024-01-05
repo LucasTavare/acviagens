@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
     include'conexao.php';
 
@@ -8,4 +8,4 @@
 
     $sql = "INCLUDE"
 
-?>
+?> -->

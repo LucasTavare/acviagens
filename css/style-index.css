@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 100VW;
 }
 
 body{
@@ -554,14 +555,15 @@ a{
 }
 
 .curiosidades{
-    height: 500px;
+    height: 83vh;
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 42% 58%;
     background-color: whitesmoke;
     padding: 10px;
-    width: 100vw;
+    width: 99.8vw;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.445);
     border-radius: 50px;
+    
 
 }
 
@@ -591,6 +593,7 @@ a{
     grid-template-columns: repeat(3,1fr);
     height: 100%;
     margin-top: 10px;
+    gap: 10PX;
 }
 
 .card-recomendados{
@@ -598,8 +601,8 @@ a{
     align-items: end;
     justify-content: center;
     gap: 10px   ;
-    width: 260px;
-    height: 400px;
+    width: 17vw;
+    height: 67vh;
     background-color: white;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.404);   
     padding: 10px;

@@ -14,7 +14,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/style-index.css">
+  <Link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="./css/style-index.css">
+    <Link rel="stylesheet" href="./css/style-internacionais.css">
   <link rel="stylesheet" href="css/header-style.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -30,7 +32,7 @@
 
       </div>
       <ul class="ul-inicial">
-        <li id="abaHome" style="transform: scale(1.1); transition: 0.5s;"><a href="">Home <i
+        <li id="abaHome" style="transform: scale(1.1); transition: 0.5s;"><a href="index.php">Home <i
               class="fa-solid fa-house" style="color: aqua;"></i></a>
         </li>
         <li><a href="">Avião <i class="fa-solid fa-plane"
@@ -38,7 +40,7 @@
         </li>
         <li><a href="">Cruzeiro <i class="fa-solid fa-sailboat"
               style="color: aqua;"></i></a></li>
-        <li><a href="">Internacionais <i class="fa-solid fa-earth-americas"
+        <li><a href="internacionais.html">Internacionais <i class="fa-solid fa-earth-americas"
               style="color: aqua;"></i></a></li>
         <li><a href="">Suporte <i class="fa-solid fa-headset"
               style="color: aqua;"></i></a></li>

@@ -1,5 +1,46 @@
 <?php 
-include'header.php'
+include'header.php';
+
+$promotions = [
+  // array multi valorado chave - valor
+  // da linha 7 a 12 e um objeto 
+  [
+    'image' => 'img/lisboa.jpg',
+    'pontoChegada' => 'Lisboa',
+    'pontoPartida' => 'São Paulo',
+    'valor' => 'R$ 249,90'
+  ],
+  [
+    'image' => 'img/img-internacionais/dubai.jpg',
+    'pontoChegada' => 'Dubai',
+    'pontoPartida' => 'São Paulo',
+    'valor' => 'R$ 249,90'
+  ],
+  [
+    'image' => 'img/londres.jpg',
+    'pontoChegada' => 'Londres',
+    'pontoPartida' => 'São Paulo',
+    'valor' => 'R$ 249,90'
+  ],
+  [
+    'image' => 'img/sidney.jpg',
+    'pontoChegada' => 'Sidney',
+    'pontoPartida' => 'São Paulo',
+    'valor' => 'R$ 249,90'
+  ],
+  [
+    'image' => 'img/newyork.jpg',
+    'pontoChegada' => 'New York',
+    'pontoPartida' => 'São Paulo',
+    'valor' => 'R$ 249,90'
+  ],
+  [
+    'image' => 'img/paris.jpg',
+    'pontoChegada' => 'Paris',
+    'pontoPartida' => 'São Paulo',
+    'valor' => 'R$ 249,90'
+  ]
+]
  ?>
 
   <div id="abahome-layout" class="container-meu">
@@ -179,74 +220,22 @@ include'header.php'
 
 
     <div class="pacotes-promocionais">
-
-    <div class="itens-promocao">
-        <img src="img/lisboa.jpg" alt="">
+    <!-- array multi valorado chave - valor -->
+    <?php foreach ($promotions as $promotion): ?>
+      <div class="itens-promocao">
+        <img src="<?php echo $promotion['image']?>" alt="">
         <div>
           <p style="line-height: 10  pt; font-size: 0.96em;">Passagem aerea:<br><i class="fa-solid fa-plane"></i> -
-            lisboa <br> Saindo de: <br> São Paulo (SP) </p>
+           <span class="ponto-chegada"><?php echo $promotion['pontoChegada']?></span>  <br> Saindo de: <br> <span class="ponto-partida"><?php echo $promotion['pontoPartida']?></span> </p>
           <p>
-            <c style="border-bottom: 1px solid black; display: flex;">R$ 249<sob>,90</c></obp>Ida e Volta
+            <c style="border-bottom: 1px solid black; display: flex;"><?php echo $promotion['valor']?></c>Ida e Volta
           </p>
-          <button class="btn-promocao" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao"onclick="acionaModal()">Comprar</button>
+          <button class="btn-promocao btn-comprar" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao"onclick="acionaModal()">Comprar</button>
         </div>
       </div>
-      <div class="itens-promocao">
-        <img src="img/londres.jpg" alt="">
-        <div>
-          <p style="line-height: 15  pt; font-size: 0.96em;">Passagem aerea:<br><i class="fa-solid fa-plane"></i> -
-            lisboa <br> Saindo de: <br> São Paulo (SP) </p>
-          <p>
-            <c style="border-bottom: 1px solid black; display: flex;">R$ 249<sob>,90</c></obp>Ida e Volta
-          </p>
-          <button class="btn-promocao" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao"onclick="acionaModal()">Comprar</button>
-        </div>
-      </div>
-      <div class="itens-promocao">
-        <img src="img/londres.jpg" alt="">
-        <div>
-          <p style="line-height: 15  pt; font-size: 0.96em;">Passagem aerea:<br><i class="fa-solid fa-plane"></i> -
-            Londres <br> Saindo de: <br> <span class="local-inicial"> São Paulo (SP) </span> </p>
-          <p>
-            <c style="border-bottom: 1px solid black; display: flex;">R$ 249<sup>,90</c></sup>Ida e Volta
-          </p>
-          <button class="btn-promocao" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao"onclick="acionaModal()">Comprar</button>
-        </div>
-      </div>
-      <div class="itens-promocao">
-        <img src="img/sidney.jpg" alt="">
-        <div>
-          <p style="line-height: 15  pt; font-size: 0.96em;" class="p">Passagem aerea:<br><i class="fa-solid fa-plane"></i> -
-            Sidney <br> Saindo de: <br> São Paulo (SP) </p>
-          <p>
-            <c style="border-bottom: 1px solid black; display: flex;" class="c">R$ 249<sup>,90</c></sup>Ida e Volta
-          </p>
-          <button class="btn-promocao" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao" onclick="acionaModal()">Comprar</button>
-        </div>
-      </div>
-      <div class="itens-promocao">
-        <img src="img/newyork.jpg" alt="">
-        <div>
-          <p style="line-height: 15  pt; font-size: 0.96em;">Passagem aerea:<br><i class="fa-solid fa-plane"></i> -
-            New York <br> Saindo de: <br> São Paulo (SP) </p>
-          <p>
-            <c style="border-bottom: 1px solid black; display: flex;">R$ 249<sup>,90</c></sup>Ida e Volta
-          </p>
-          <button class="btn-promocao" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao" onclick="acionaModal()">Comprar</button>
-        </div>
-      </div>
-      <div class="itens-promocao">
-        <img src="img/paris.jpg" alt="">
-        <div>
-          <p style="line-height: 15  pt; font-size: 0.96em;">Passagem aerea:<br><i class="fa-solid fa-plane"></i> -
-            Paris <br> Saindo de: <br> São Paulo (SP) </p>
-          <p>
-            <c style="border-bottom: 1px solid black; display: flex;">R$ 249<sup>,90</c></sup>Ida e Volta
-          </p>
-          <button class="btn-promocao" data-bs-toggle="modal" data-bs-target="#staticBackdropPromocao">Comprar</button>
-        </div>
-
-      </div>
+    <?php endforeach ?>
+          
+      
     </div>
 
     <hr style=" width: 80vw; margin: 5vh auto;">
@@ -466,9 +455,7 @@ include'header.php'
         <div class="modal-content">
 
           <div class="corpo-modal-promocao">
-            <p></p>
-
-            <small></small>
+            
           </div>
 
   

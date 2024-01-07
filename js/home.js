@@ -33,6 +33,15 @@ const cadastrarUser = () => {
 
 const acionaModal = () =>{
 
+  const card = $(this).closest('.itens-promocao')
+  const img = ''
+  const localPartida = card.find('.ponto-partida').text()
+  const localChegada = card.find('.ponto-chegada').text()
+  const valor = ''
+  console.log(localChegada)
+  console.log(localPartida)
+
+
   const p = document.getElementById('textoP')
 
   const elementoPromocao = $(this).closest('.itens-promocao');
@@ -44,14 +53,24 @@ const acionaModal = () =>{
   
   `);
 
-  console.log(dados)
-  
-  console.log(p)
-
 }
 
 
 // internacional scrpit
+
+$('.btn-comprar').click(function(){
+  // retorna primeiro elemento do botao que clicou (closets),  this e a referencia (botao)
+  const card = $(this).closest('.itens-promocao')
+  const img = ''
+  const localPartida = card.find('.ponto-partida').text()
+  const localChegada = card.find('.ponto-chegada').text()
+  const valor = ''
+  console.log(localChegada)
+  console.log(localPartida)
+
+})
+
+
 
 var swiper = new Swiper(".swiper", {
   grabCursor: true, 

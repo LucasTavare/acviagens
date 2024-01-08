@@ -31,27 +31,23 @@ const cadastrarUser = () => {
     })
 }
 
-const acionaModal = () =>{
+const acionaModal = (event) =>{
+  console.log(this)
 
   const card = $(this).closest('.itens-promocao')
   const img = ''
   const localPartida = card.find('.ponto-partida').text()
   const localChegada = card.find('.ponto-chegada').text()
   const valor = ''
+
   console.log(localChegada)
-  console.log(localPartida)
+  const modal = $('.corpo-modal-promocao')
+
+  modal.find('.chegada').html(localChegada)
+
+  console.log(modal.find('.chegada'))
 
 
-  const p = document.getElementById('textoP')
-
-  const elementoPromocao = $(this).closest('.itens-promocao');
-
-  const elementoModal = $('.modal-promocao .corpo-modal-promocao');
-  
-
-  elementoModal.html(`
-  
-  `);
 
 }
 
@@ -61,12 +57,21 @@ const acionaModal = () =>{
 $('.btn-comprar').click(function(){
   // retorna primeiro elemento do botao que clicou (closets),  this e a referencia (botao)
   const card = $(this).closest('.itens-promocao')
-  const img = ''
+  const img = card.find('img').attr('src')
+  console.log(img)
   const localPartida = card.find('.ponto-partida').text()
   const localChegada = card.find('.ponto-chegada').text()
   const valor = ''
+
   console.log(localChegada)
-  console.log(localPartida)
+  const modal = $('.corpo-modal-promocao')
+
+  modal.find('.chegada').html(localChegada)
+  modal.find('.partida').html(localPartida)
+  modal.find('img').attr('src', img)
+
+  console.log(modal.find('.chegada'))
+
 
 })
 

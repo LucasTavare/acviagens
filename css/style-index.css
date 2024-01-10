@@ -766,3 +766,15 @@ input{
     display: grid;
     align-items: start;
 }
+
+.container-modal-promo{
+    display: grid;
+    grid-template-columns: 4fr 60fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-modal-promo img{
+    height: 70vh;
+    width: 40vw;
+}

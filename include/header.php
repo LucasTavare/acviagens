@@ -40,7 +40,7 @@
         </li>
         <li><a href="">Cruzeiro <i class="fa-solid fa-sailboat"
               style="color: aqua;"></i></a></li>
-        <li><a href="internacionais.html">Internacionais <i class="fa-solid fa-earth-americas"
+        <li><a href="internacionais.php">Internacionais <i class="fa-solid fa-earth-americas"
               style="color: aqua;"></i></a></li>
         <li><a href="">Suporte <i class="fa-solid fa-headset"
               style="color: aqua;"></i></a></li>

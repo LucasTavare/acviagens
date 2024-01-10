@@ -68,8 +68,8 @@ $procuras = [
        
 
     <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js' ></script>
-    <script src="./js/internacional.js"></script>'
-    </script>
-</body>
+    <script src="./js/internacional.js"></script>
 
-</html>
+<?php
+    include 'include/footer.php';
+?>

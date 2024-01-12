@@ -5,7 +5,7 @@
 
         <div class="corpo-modal">
           <div class="foto-login">
-            <img src="img/img-header/fundo.modal.jpg" alt="">
+            <img src="./img/img-header/fundo.modal.jpg" alt="">
           </div>
           <div class="login">
             <div style="display: grid; justify-content: end;">
@@ -13,9 +13,9 @@
             </div>
 
             <div class="centralizar">
-              <img src="img/img-header/logo.jpg" alt="" style="width: 150px; height: 150px;">
+              <img src="./img/img-header/logo.jpg" alt="" style="width: 150px; height: 150px;">
             </div>
-            <form action="">
+            <form action="" method="POST">
 
               <div>
                 <label for="Login" class="label-modal">Login:</label>

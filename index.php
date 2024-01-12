@@ -342,7 +342,7 @@ $inverno = [
     </div>
   </div>
 
-  <script src="js/index.js"></script>
+  
   
 <?php
   include 'include/footer.php';
